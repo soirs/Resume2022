@@ -15,7 +15,7 @@ const Skills = () => {
             </Typography>
 
             {skills.map((entry) => (
-                <Box m={1} display="inline">
+                <Box key={entry} m={1} display="inline">
                     <Chip label={entry} />
                 </Box>
             ))}
