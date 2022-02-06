@@ -29,27 +29,25 @@ const ContactInfo = () => (
 
 const Header = () => {
     return (
-        <Box>
-            <Box py={1} sx={{ bgcolor: blueGrey[100] }}>
-                <Box>
-                    <Typography
-                        align="center"
-                        sx={{ fontFamily: "'Arvo', serif" }}
-                        variant="h4"
-                    >
-                        {headerText.fullName}
-                    </Typography>
-                    <Typography
-                        align="center"
-                        gutterBottom
-                        sx={{ fontFamily: "'Arvo', serif" }}
-                        variant="h6"
-                    >
-                        {headerText.title}
-                    </Typography>
-                </Box>
-                <ContactInfo />
+        <Box py={1} sx={{ bgcolor: blueGrey[100] }}>
+            <Box>
+                <Typography
+                    align="center"
+                    sx={{ fontFamily: "'Arvo', serif" }}
+                    variant="h4"
+                >
+                    {headerText.fullName}
+                </Typography>
+                <Typography
+                    align="center"
+                    gutterBottom
+                    sx={{ fontFamily: "'Arvo', serif" }}
+                    variant="h6"
+                >
+                    {headerText.title}
+                </Typography>
             </Box>
+            <ContactInfo />
         </Box>
     );
 };
